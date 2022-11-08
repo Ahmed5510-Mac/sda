@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&display=swap");
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+  font-family: "Reem Kufi", sans-serif;
+  background: radial-gradient(
+    70.99% 84.22% at 80.89% 12.01%,
+    #993530 0%,
+    #842e2a 28.13%,
+    #000027 100%
+  );
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+/* ==================================|background|================================ */
+.starts {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+  animation: animate 8s ease-in-out infinite, backgroundMove 16s linear infinite;
+}
+.star0 {
+  background-repeat: repeat;
+  background: url(assets/st-1.png);
+  background-size: 20%;
+}
+.star1 {
+  background-repeat: repeat;
+  animation-delay: 0s;
+  background: url(https://e.top4top.io/p_2502k0gtc1.png);
+  background-size: 20%;
+}
+.star2 {
+  background-repeat: repeat;
+  animation-delay: -1s;
+  background: url(https://c.top4top.io/p_2502buqn51.png);
+  background-size: 20%;
+}
+.star3 {
+  animation-delay: -2s;
+  background: url(https://j.top4top.io/p_2502ltu3x1.png);
+  background-size: 20%;
+}
+
+.star4 {
+  background-repeat: repeat;
+  animation-delay: -3s;
+  background: url(https://j.top4top.io/p_2502492y51.png);
+  background-size: 20%;
+}
+.star5 {
+  background-repeat: repeat;
+  animation-delay: -4s;
+  background: url(https://i.top4top.io/p_2502td2vu1.png);
+  background-size: 20%;
+}
+.star6 {
+  background-repeat: repeat;
+  animation-delay: -5s;
+  background: url(https://d.top4top.io/p_2502sm8791.png);
+  background-size: 20%;
+}
+.star7 {
+  background-repeat: repeat;
+  animation-delay: -6s;
+  background: url(https://i.top4top.io/p_2502w217v1.png);
+  background-size: 20%;
+}
+.star8 {
+  background-repeat: repeat;
+  animation-delay: -7s;
+  background: url(https://c.top4top.io/p_2502wt6lq1.png);
+  background-size: 20%;
+}
+/* --------|animation|--------- */
+@keyframes animate {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    opacity: 1;
+  }
+}
+@keyframes backgroundMove {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+/* =======================|start header|============================== */
+header {
+  width: 100%;
+  height: 100px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+header img {
+  width: 100%;
+  height: 100%;
+}
+.image {
+  width: 90px;
+  height: 60px;
+}
+.logo {
+  width: 260px;
+  height: 80px;
+}
+/* =======================|end header|============================== */
+/* =======================|start content|============================== */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.title {
+  color: #fff;
+  background: linear-gradient(
+    91.16deg,
+    rgba(0, 65, 134, 0) 5.67%,
+    #184d63 40.21%,
+    rgba(0, 65, 134, 0) 92.48%
+  );
+  border-radius: 23px;
+  padding-inline: 40px;
+  padding-block: 10px;
+}
+@media screen and (max-width: 992px) {
+  .logo {
+    width: 170px;
+    height: 90px;
+  }
+  .image {
+    width: 90px;
+    height: 60px;
+  }
+  .title {
+  }
+  .title h1 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+  .image {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+}
+/* =======================|end content|============================== */
+/* =======================|content|============================== */
+.main-content{
+  direction: ltr;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: calc(100vh - 100px);
+overflow: hidden;
+}
+.map{
+  width: 300px;
+height: 445px;
+left: 42px;
+top: 149px;
+background: rgba(255, 255, 255, 0.19);
+border: 1px solid #FFFFFF;
+border-radius: 18px;
+}
